@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+*::selection {
+    color: #fff;
+    background-color: #FF735C;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+.nav {
+    height: 100px;
+    width: 100%;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+    border-bottom: 2px solid #dadada;
+}
+
+.nav i {
+    font-size: 1.2vw;
+    font-weight: 800;
+    display: none;
+}
+
+#nav2 {
+    display: flex;
+    gap: 4vw;
+}
+
+.nav h2 {
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.nav h4 {
+    font-size: 1.1vw;
+}
+
+.nav button {
+    font: 1vw;
+    font-weight: 600;
+    padding: 0.6vw 1.4vw;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #385A64;
+}
+
+.content {
+    height: calc(100% - 100px);
+    width: 100%;
+    /* background-color: rosybrown; */
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 55%;
+    padding: 5vw 4vw;
+}
+
+.left h1 {
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+}
+
+.left h1 span {
+    color: #FF735C;
+}
+
+.left p {
+    font-size: 1.2vw;
+    color: #666;
+    margin-top: 1.5vw;
+    margin-bottom: 3vw;
+    width: 80%;
+}
+
+.content button {
+    font: 1.5vw;
+    font-weight: 700;
+    padding: 1.1vw 2.1vw;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #FF735C;
+}
+
+.right {
+    height: 100%;
+    width: 45%;
+    background-color: #FF735C;
+}
+
+.right img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+@media (max-width:600px) {
+    .nav {
+        background-color: #FF735C;
+        color: #fff;
+        padding: 0 5vw;
+        height: 60px;
+    }
+
+    .nav h2 {
+        font-size: 6vw;
+        font-weight: 700;
+    }
+
+    .nav h4 {
+        font-size: 4vw;
+        display: none;
+    }
+
+    .nav i {
+        font-size: 5vw;
+        font-weight: 800;
+        display: block;
+    }
+    .nav button {
+        display: none;
+    }
+    .content {
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        height: 50%;
+        padding: 4vw 6vw;
+    }
+    .left h1 {
+        font-size: 10vw;
+        line-height: 12vw;
+    }
+    .left p {
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+    }
+    .left button {
+        padding: 3vw 6vw;
+        font-size: 3.5vw;
+        font-weight: 600;
+        border-radius: 3px;
+    }
+    .right {
+        width: 100%;
+        height: 50%;
+    }
+}
